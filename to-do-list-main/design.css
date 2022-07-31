@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to right, rgb(38, 22, 185), rgb(55, 12, 156));
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+    height: 150px;
+}
+
+h2 {
+    margin-right: 18px;
+    font-size: 40px;
+}
+
+#checkI {
+    margin-right: 15px;
+    margin-left: 0px;
+}
+.new{
+    background-color: transparent;
+}
+.user_input {
+    width: 350px;
+    text-align: center;
+}
+
+.user_input input {
+    width: 80%;
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgb(207, 203, 216);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user_input input:focus {
+    box-shadow: 0 0 10px rgb(157, 156, 177);
+    border: 1px solid rgb(184, 194, 199);
+}
+
+.user_input button:hover {
+    box-shadow: 0 0 10px rgb(26, 23, 156);
+    border: 1px solid rgb(63, 32, 148);
+}
+
+.user_input button {
+    cursor: pointer;
+    padding: 5px;
+    width: 40px;
+    transition: 1s;
+    outline: none;
+    font-weight: bold;
+    color: rgb(57, 20, 145);
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.to_do_items {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    background-color: #f3f1f5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    color: #0c0909;
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px rgb(46, 13, 236);
+    border: 1px solid rgb(73, 24, 207);
+}
+
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width:768px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2 {
+        margin: 10px 0;
+    }
+
+    .user_input {
+        width: 100%;
+    }
+
+    .to_do_items {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .user_input #input {
+        width: 74%;
+    }
+}
+
+@media(max-width:320px) {
+    .user_input #input {
+        width: 60%;
+    }
+}
